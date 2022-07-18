@@ -125,7 +125,7 @@ if __name__ == "__main__":
         # I make the input lowercase so that the program behaves the same regardless of whether the user enters a capital or lowercase letter.
         userinput = input().lower()
         if userinput not in options:
-            "Enter one of the specified options"
+            print("Enter one of the specified options")
             continue
         processInput(userinput)
     print("Goodbye!")
