@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <title>"DIGHUM150a Sandbox"</title>
+</head>
+
+<body>
+<h1>Here are some Useful HTML Tags</h1>
+<h3>At the top of your HTML document, outside of other elements:</h3>
+<h4>&lt;!DOCTYPE html&gt;</h4>
+<p>Every HTML document should have this at the top. It tells the browser or other interpreting software the format of
+    the document that it is reading. Note that the ! means that the contents of the tag are not displayed or interpreted
+    by the browser. It's just a message to the browser.</p>
+<h4>&lt;html lang=&ldquo;en&rdquo; /&gt;&lt;/html&gt;</h4>
+<p>The &lt;html&gt; tag has to wrap all of the content on your site including the head and body tags. The attribute
+    "lang" tells your browser or screen-reader which language the page is in. This will be useful later when you start
+    to make pages for multiple languages. You can look up codes for other languages here: <a class="inline_disabled"
+        href="https://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank"
+        rel="noopener">https://www.loc.gov/standards/iso639-2/php/code_list.php</a></p>
+<h3>The Header</h3>
+<p>The head tag contains information about your page which gets displayed at the top of the browser on some
+    computers.&nbsp; This is where you can place metadata which will help archiving software, and search engines access
+    your site, as well as anyone else who wants to scrape your site for their own projects. You can also place
+    information here which helps your browser or screen-reader to interpret and display the content of your site, like
+    the charset metadata.</p>
+<h4>&lt;head&gt;&lt;/head&gt;</h4>
+<p>This marks the header of the webpage, and you should nestle the following elements inside it.</p>
+<h4>&lt;meta charset="utf-8&rdquo; /&gt;</h4>
+<p>This meta element tells your browser to use unicode when displaying the characters on the site. Most pages use
+    unicode these days, but you can read about the charsets of old here: <a class="inline_disabled"
+        href="https://www.iana.org/assignments/character-sets/character-sets.xhtml" target="_blank"
+        rel="noopener">https://www.iana.org/assignments/character-sets/character-sets.xhtml</a></p>
+<h4>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0&rdquo; /&gt;</h4>
+<p>This meta element tells your browser to use the whole width of the window or screen for the webpage.</p>
+<h4>&lt;title&gt;&lt;/title&gt;</h4>
+<p>This meta element provides the title of your website. It may get displayed in the titlebar of your window, or in the
+    tab-name if you are using chrome. It usually gets displayed somewhere by the browser and is not optional.</p>
+<h4><span>&lt;link </span><span class="html-attribute-name">rel</span><span>="</span><span
+        class="html-attribute-value">stylesheet</span><span>" </span><span
+        class="html-attribute-name">href</span><span>="</span>mycssfile.css<span>"&gt;</span></h4>
+<p><span>You will also place links to any stylesheets (ie. CSS files) you are using in the header of your html document.
+        If you are importing javascripts from elsewhere, you will place the url for them in a similar link
+        element.</span></p>
+<h3>The Body</h3>
+<p>All of the content in your page goes under "body", including the part you might think of as resembling a header on a
+    newspaper.</p>
+<h4>&lt;body&gt;&lt;/body&gt;</h4>
+<p>This element is wrapped around all the text, pictures, links, scripts, and everything else in your body.</p>
+<h4>&lt;p&gt;&lt;/p&gt;</h4>
+<p>Separates the enclosed content from the surroundings by a carriage return. This is how you mark up a paragraph.</p>
+<h4>&lt;em&gt;&lt;/em&gt;</h4>
+<p>This means the enclosed text is emphasized. Use it for text you might think of as being spoken loudly or slowly.
+    Different machines will interpret this differently.</p>
+<h4>&lt;div&gt;&lt;/div&gt;</h4>
+<h4>&lt;span&gt;&lt;/span&gt;</h4>
+<p>These don't have any inherent meaning. They are usually used along with a "class" or "id" attribute to mark a section
+    of text so that something special can be done to it. So, for example, if you wanted a particular block of text to
+    have a particular style, you can use &lt;div class="mystyle"&gt;&lt;/div&gt; so that you can style the block
+    "mystyle" specially in your CSS. You can do similar things with Javascript, such as using the class name to hide a
+    block of text inside the aforementioned div until the user clicks a button.</p>
+<h4>&lt;h1&gt;&lt;/h1&gt;</h4>
+<p>Use this for the title of your page.</p>
+<h4>&lt;h2&gt;&lt;/h2&gt;&lt;h3&gt;&lt;/h3&gt; etc...</h4>
+<p>Use these to mark chapter headings, subtitles, and subsections of the text on your page.</p>
+<h4>&lt;ul&gt;&lt;/ul&gt;</h4>
+<p>An unordered list. This is not only the stuff you'd put bullet points next to in a presentation, but less obvious
+    things, like menus and nav bars.</p>
+<h4>&lt;ol&gt;&lt;/ol&gt;</h4>
+<p>An ordered list. Both the things you'd want to put numbered items next to in a presentation, but anything that needs
+    to be in a specific order. You can reverse the order by using the attribute "reversed", like &lt;ol
+    reversed&gt;&lt;/ol&gt;</p>
+<h4>&lt;li&gt;&lt;/li&gt;</h4>
+<p>These are enclosed in ol or ul tags, and are wrapped around items in a the list. Example:</p>
+<pre>&lt;ol&gt;<br /><br />&lt;li&gt; This is a list item. &lt;/li&gt;<br /><br />&lt;li&gt; This is also a list item. &lt;/li&gt;<br /><br />&lt;/ol&gt;<br /><br /></pre>
+<h4>&lt;dl&gt;&lt;/dl&gt;</h4>
+<p>This is used to wrap a description list consisting of terms and defintions. Instead of using &lt;li&gt;&lt;/li&gt; in
+    your list, use pairs of &lt;dt&gt;This is a term&lt;/dt&gt; and &lt;dd&gt;This is a definition.&lt;/dd&gt;</p>
+<h4>&lt;a href="https://link" target="_blank"&gt; This is a link. &lt;/a&gt;</h4>
+<p>The "a" element, which stands for "anchor" is usually used with the <strong>href</strong> attribute for links. It can
+    be used also with the <strong>target</strong> attribute to tell the browser where to open the new link. Providing
+    the value "_blank" to this attribute will open the link in a new tab. Instead of using a URL for the value of HREF,
+    you can put an id attribute on any tag and link to that id attribute like this:</p>
+<pre>&lt;a href="#Chapter_3"&gt; Chapter 3 &lt;/a&gt;<br /><br />...<br /><br />&lt;h3 id="Chapter_3"&gt; Chapter 3 &lt;/h3&gt;</pre>
+<p>This can be a good way to build a table of contents or to link to a specific part of a page.</p>
+<h4>&lt;img src="image.jpg" alt="This is alt text for this image." /&gt;</h4>
+<p>This is how you insert an image in the page. The alt text should be descriptive. Here are some hints on how to write
+    good, accessible alt-text. <a class="inline_disabled" href="https://webaim.org/techniques/alttext/" target="_blank"
+        rel="noopener">https://webaim.org/techniques/alttext/</a></p>
+<h4>&lt;em&gt;&lt;/em&gt;</h4>
+<p>This tag means that the enclosed text ought to be emphasized. Use it to draw attention to text that is not
+    necessarily more imporant than the surrounding text. Most browsers will put it in italics unless told otherwise by
+    CSS.</p>
+<h4>&lt;strong&gt;&lt;/strong&gt;</h4>
+<p>Use this to indicate text that is more important than the surrounding text. Most browsers will bold it unless told
+    otherwise by CSS.</p>
+</body>

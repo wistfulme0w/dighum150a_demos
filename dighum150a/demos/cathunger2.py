@@ -14,7 +14,7 @@ if __name__ == "__main__":
             print("The cat gobbles down his food.")
         elif gettingFood == "y":
             print("The cat rubs your legs encouragingly.")
-            print("The cat eats gobbles down his food.")
+            print("The cat  gobbles down his food.")
         else:
             print("MEOW")
             print("The cat spitefully scratches the furniture.")
