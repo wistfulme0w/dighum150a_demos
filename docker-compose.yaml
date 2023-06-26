@@ -1,5 +1,5 @@
 services:
-  tinyarchive:
+  dighumsandbox:
     build: dighum150a
     restart: always
     ports:
