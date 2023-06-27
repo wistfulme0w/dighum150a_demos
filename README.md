@@ -6,6 +6,14 @@ The program convertHeicToJpg.py requires that both the python library Wand and t
 If you are on a mac, you can download ImageMagick from here and install it:
 https://imagemagick.org/script/download.php
 
+If you are using the docker files, the docker image has everything you need pre-installed.
+To load it, sync the whole repo, use your command prompt to navigate to the directory with docker-composer.yaml,
+and type:
+
+docker-compose up
+
+Then, connect to the container with VSCode or shell into it.
+
 If you are using your VM for the class, install it with the following command.
 
 sudo apt-get install imagemagick
