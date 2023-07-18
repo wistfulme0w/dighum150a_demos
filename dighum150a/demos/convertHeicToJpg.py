@@ -1,6 +1,5 @@
 import argparse
 import os.path
-from webbrowser import get
 from wand.image import Image
 
 # This program takes a folder full of HEIC files and an output directory
