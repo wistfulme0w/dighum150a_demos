@@ -11,6 +11,8 @@ ENV PYTHONUNBUFFERED=1 \
 RUN set -ex \
     && apt-get update \
     && apt-get upgrade -y \
+    && apt upgrade \
+    && apt install sqlite3 \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
